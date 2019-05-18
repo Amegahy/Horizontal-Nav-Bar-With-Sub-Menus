@@ -1,0 +1,170 @@
+body {
+
+	background-color: #fff;
+	margin: 0px;
+	width: 100vw;
+	height: 100vh;
+	font-family: Verdana;	
+
+}
+
+/* Navigation bar */
+.nav-bar {
+
+	background-color: black;
+	position: fixed;
+	z-index: 1;
+	width: 100%;
+	margin: 0px;
+}
+
+/* Dropdowns for the nav bar */
+.nav-bar .dropdown{
+
+	display: inline-block;
+	position: relative;
+}
+
+/* Headings for each dropdown */
+.nav-bar .dropdown button, .nav-bar a{
+
+	color: white;
+	font-size: 15px;
+	padding: 10px 15px;
+	outline: none !important;
+	border: none !important;
+	background-color: transparent;
+	cursor: pointer;	
+	font-weight: bold;
+	font-size: 20px;
+	text-decoration: none;
+}
+
+.nav-bar .dropdown button:hover, .nav-bar a:hover{
+	
+	background-color: #5B5B5B;
+	color: black;
+}
+
+/* Container for content inside the dropdown */
+.nav-bar .dropdown .dropdown-content {
+
+	display: none;
+	position: absolute;
+	background-color: #F7F7F7;
+	z-index: 1;
+	border-style: solid;
+	border-width: 4px;
+	border-top: 0px;
+	width: 200px;
+}
+
+/* Show dropdown when heading is hovered */
+.nav-bar .dropdown:hover .dropdown-content {
+
+	display: block;
+}
+
+/* Sections in the dropdowns */
+.nav-bar .dropdown .dropdown-content .dc-section {
+
+	width: 200px;
+	border-width: 0px 0px 3px 0px;
+	border-style: solid;
+	border-color: #AAAAAB;
+}
+
+/* Options in each dropdown */
+.nav-bar .dropdown .dropdown-content .dc-section a {
+
+	font-size: 15px;
+	color: black;
+	margin: 0px;
+	padding: 15px 10px;
+	text-decoration: none;
+	display: block;
+	height: 20px;
+}
+
+.nav-bar .dropdown .dropdown-content .dc-section a:hover  {
+
+	background-color: #AAAAAB;
+	color: white;
+}
+
+/* Right arrow icon */
+.nav-bar .dropdown .dropdown-content .dc-section img {
+
+	position: absolute;
+	height: 20px;
+	width: 15px;
+	margin-left: 95px;
+}
+
+.nav-bar .dropdown .dropdown-content .dc-section:hover img {
+
+	display: none;
+}
+
+/* Sub menus of the dropdowns */
+.nav-bar .dropdown .dropdown-content .dc-section .sub-menu  {
+
+	display: none;
+	position: absolute;
+	width: 200px;
+	left: 201px;
+	margin-top: -54px;/* Allign the sub menu with the dropdown option */
+	float: right;
+	z-index: 1;
+	background-color: #F7F7F7;
+	border-style: solid;
+	border-width: 4px;
+	width: 200px;
+}
+
+.nav-bar .dropdown .dropdown-content .dc-section .sub-menu a{
+
+	border-width: 0px 0px 1px 0px !important;/* Dividers between each sub menu */
+	border-style: solid !important;
+	border-color: black !important;
+}
+
+.nav-bar .dropdown .dropdown-content .dc-section:hover .sub-menu  {
+
+	display: block;
+}
+
+/*** Search bar in nav bar ***/
+.nav-bar .search-bar {
+
+	float: right;
+}
+
+.nav-bar .search-bar input[type=text]{
+
+	font-size: 15px;
+	background: #F7F7F7;
+	padding: 5px;
+	margin: 7px 0px;
+	border: none !important;
+	border-radius: 3px;
+	outline: none !important;
+}
+
+.nav-bar .search-bar button[type=submit]{
+
+	padding: 5px 2px 5px 2px;
+	margin: 0px 3px 7px -5px;
+	background-color: white; 
+	border-color: #AAAAAB;
+	border-width: 0px 0px 0px 1px;
+	outline: none !important;
+	cursor: pointer;
+}
+
+.nav-bar .search-bar img{
+
+	width: 16px;
+	height: 14px;
+	cursor: pointer;
+}
