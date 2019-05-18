@@ -1,0 +1,108 @@
+<!-- 
+Author: Alex Megahy
+Description: Horizontal Navigation Bar w/ sub menus
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>Horizontal Navigation Bar</title>
+<link rel="stylesheet" type="text/css" href="index.css">
+</head>
+<body>
+
+<div class = "nav-bar">
+	<div class = "dropdown">
+		<button type = "button">Title</button>
+		<div class = "dropdown-content">
+			<div class="dc-section">
+				<a href="#">Sub Title</a>
+			</div>
+			<div class="dc-section">
+				<a href="#">Sub Title</a>
+			</div>
+			<div class="dc-section">
+				<a href="#">Sub Title</a>	
+			</div>
+			<div class="dc-section" style="border-bottom: 0px;"><!-- Place the styling on the bottom dropdown content section to remove double border -->
+				<a href="#">Sub Title <img src="right-arrow-icon.png"></a>
+				<div class="sub-menu">
+					<a href="#">Test sub</a>
+					<a href="#">Test sub</a>
+					<a href="#">Test sub</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class = "dropdown">
+		<button type = "button">Title</button>
+		<div class = "dropdown-content">
+			<div class="dc-section">
+				<a href="#">Sub Title</a>
+			</div>
+			<div class="dc-section">
+				<a href="#">Sub Title <img src="right-arrow-icon.png"></a>
+				<div class="sub-menu">
+					<a href="#">Test sub</a>
+					<a href="#">Test sub</a>
+					<a href="#">Test sub</a>
+					<a href="#">Test sub</a>
+					<a href="#">Test sub</a>
+				</div>
+			</div>
+			<div class="dc-section">
+				<a href="#">Sub Title</a>
+			</div>
+			<div class="dc-section" style="border-bottom: 0px;"><!-- Place the styling on the bottom dropdown content section to remove double border -->
+				<a href="#">Sub Title <img src="right-arrow-icon.png"></a>
+				<div class="sub-menu">
+					<a href="#">Test sub</a>
+					<a href="#">Test sub</a>
+					<a href="#">Test sub</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<div class = "dropdown">
+		<button type = "button">Title</button>
+		<div class = "dropdown-content">
+			<div class="dc-section">
+				<a href="#">Sub Title</a>
+			</div>
+			<div class="dc-section">
+				<a href="#">Sub Title <img src="right-arrow-icon.png"></a>
+				<div class="sub-menu">
+					<a href="#">Test sub</a>
+					<a href="#">Test sub</a>
+				</div>
+			</div>
+			<div class="dc-section">
+				<a href="#">Sub Title <img src="right-arrow-icon.png"></a>
+				<div class="sub-menu">
+					<a href="#">Test sub</a>
+					<a href="#">Test sub</a>
+					<a href="#">Test sub</a>
+				</div>
+			</div>
+			<div class="dc-section" style="border-bottom: 0px;"><!-- Place the styling on the bottom dropdown content section to remove double border -->
+				<a href="#">Sub Title <img src="right-arrow-icon.png"></a>
+				<div class="sub-menu">
+					<a href="#">Test sub</a>
+					<a href="#">Test sub</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="search-bar">
+	    <form action="#">
+	      <input type="text" placeholder="Search.." name="search">
+	      <button type="submit"><img src="search-icon.png"></button>
+	    </form>
+	</div>
+</div>
+
+</body>
+</html>
